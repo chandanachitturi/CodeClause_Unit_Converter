@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Unit Converter</title>
+            <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+            <link rel="stylesheet" href="style.css">
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans:800|Poppins:700" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        </head>
+        <body>
+            <div class="converter-wrapper">
+                <h1>UNIT CONVERTER</h1>   
+                <form name="property_form" class="property">
+                  <span id="unit" style="justify-content: center;">
+                    <select class="select-property" style="height: 40px; width: 470px; background-color: #62195b; color: #ffff; font-size: 15px; font-weight: 500; border-radius: 5px;" name="the_menu" size=1 onChange="UpdateUnitMenu(this, document.form_A.unit_menu); UpdateUnitMenu(this, document.form_B.unit_menu)">
+                    </select>
+                  </span>
+                </form>
+                
+                <div class="main">
+                  <div class="converter-side-a">
+                    <form name="form_A" onSubmit="return false">
+                      <input type="text" class="numbersonly" name="unit_input" maxlength="20" value="0" onKeyUp="CalculateUnit(document.form_A, document.form_B)">
+                      <div class="select">
+                        <select name="unit_menu" onChange="CalculateUnit(document.form_B, document.form_A)">
+                        </select>
+                      </div>
+                    </form>
+                  </div>
+                
+                  <div class="converter-side-b">
+                    <form name="form_B" onSubmit="return false">
+                      <input type="text" class="numbersonly" name="unit_input" maxlength="20" value="0" onkeyup="CalculateUnit(document.form_B, document.form_A)">
+                      <span>
+                        <select name="unit_menu" onChange="CalculateUnit(document.form_A, document.form_B)">
+                        </select>
+                      </span>
+                    </form>
+                  </div>
+                </div>
+            </div>
+            <script src="main.js"></script>
+        </body>
+    </html>
