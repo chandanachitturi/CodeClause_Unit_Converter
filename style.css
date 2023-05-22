@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani&display=swap");
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #280324, #9b6b9c);
+    overflow: hidden;
+}
+
+h1{
+    color: #6b2272;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.8rem;
+}
+
+.converter-wrapper{    
+    background-image:url('https://cdn.wallpapersafari.com/20/69/x5JLij.jpg');
+    width: 470px;
+    height: 340px;
+    padding: 50px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    font-family: "Rajdhani", sans-serif;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.converter-side-a input{
+    all: unset;
+    display: inline-block;
+    margin-top: 1rem;
+    width: 180px;
+    height: 48px;
+    padding: 5px;
+    background-color: #ebebeb;
+    color: #848484;
+    font-size: 1.5rem;
+    border: none;
+    box-sizing: border-box;
+    font-weight: 500;
+    appearance: text-field;
+}
+
+.converter-side-b input{
+    all: unset;
+    display: inline-block;
+    margin-top: 1rem;
+    width: 180px;
+    height: 48px;
+    padding: 5px;
+    background-color: #ebebeb;
+    color: #848484;
+    font-size: 1.5rem;
+    border: none;
+    box-sizing: border-box;
+    font-weight: 500;
+    appearance: text-field;
+}
+
+.converter-side-a select{
+    padding: 7%;
+    width: 180px;
+    margin-top: 17px;
+    background-color:#62195b;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.converter-side-b select{
+    padding: 7%;
+    width: 180px;
+    margin-top: 17px;
+    display: flex;
+    background-color: #62195b;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.converter-wrapper span.unit{
+    width: 50%;
+}
+
+.select-property select{
+    width: 500px;
+}
